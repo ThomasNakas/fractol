@@ -1,0 +1,6 @@
+*.o
+*test*
+*done*
+*easy*
+*hard*
+*.ignore*
