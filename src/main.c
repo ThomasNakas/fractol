@@ -6,7 +6,7 @@
 /*   By: tnakas <tnakas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 20:12:17 by tnakas            #+#    #+#             */
-/*   Updated: 2024/06/14 15:46:09 by tnakas           ###   ########.fr       */
+/*   Updated: 2024/06/14 17:15:26 by tnakas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int32_t	main(int argc, char **argv)
 		mlx_key_hook(f.mlx, &move_map, &f);
 		mlx_scroll_hook(f.mlx, &zoom_one, &f);
 		mlx_loop(f.mlx);
+		mlx_delete_image(f.mlx, f.img);
 		mlx_terminate(f.mlx);
 	}
 	else
